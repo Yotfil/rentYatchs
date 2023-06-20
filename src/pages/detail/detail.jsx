@@ -40,31 +40,33 @@ const Detail = () => {
       </div>
       <div className={style.detailsContainer}>
         <h4 className={style.subtitle}>Prices</h4>
-        <table className={style.table}>
-          <thead>
-            <tr>
-              <th>price</th>
-              <th>time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div className={style.itemContainer}>
-                  <FontAwesomeIcon
-                    icon={faDollarSign}
-                    className={style.icon}
-                  />
-                  <p>
-                    <b>6.000</b>{' '}
-                  </p>
-                  <small className={style.badge}>USD</small>
-                </div>
-              </td>
-              <td>4 hours</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className={style.tableContainer}>
+          <table className={style.table}>
+            <thead>
+              <tr>
+                <th>price</th>
+                <th>time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div className={style.itemContainer}>
+                    <FontAwesomeIcon
+                      icon={faDollarSign}
+                      className={style.icon}
+                    />
+                    <p>
+                      <b>6.000</b>{' '}
+                    </p>
+                    <small className={style.badge}>USD</small>
+                  </div>
+                </td>
+                <td>4 hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         {/* <div className={style.detailContainer}>
             <p>Price</p>
