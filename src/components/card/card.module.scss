@@ -1,0 +1,74 @@
+@import '../../styles/var.scss';
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: 2px solid #dcdcdc;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 2px #dcdcdc;
+  margin: auto;
+  transition: all ease-in-out 0.3s;
+}
+
+.cardContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px #c4c4c4;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 340px;
+  height: 230px;
+}
+
+.imgContainer {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img {
+  width: 100%;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.badge {
+  font-weight: 200;
+}
+
+.seeMoreBtn {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $blue-color;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all ease-in-out 0.3s;
+}
+.seeMoreBtn:hover {
+  background-color: $blue-color-light;
+  color: white;
+}

@@ -1,0 +1,102 @@
+@import '../../styles/var.scss';
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+.containerImage {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 90%;
+  box-shadow: 0 0 40px #badeff;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 48%;
+}
+
+.infoContainer h2 {
+  width: fit-content;
+  padding: 0 20px 10px 0;
+  border-bottom: 3px solid $orange-color;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.itemContainer p {
+  font-weight: 400;
+}
+.icon {
+  color: $orange-color;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  background-color: $red-color;
+  color: white;
+}
+
+.table {
+  padding: 10px;
+  box-shadow: 0 0 4px gray;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border: 3px solid #e4e4e4;
+  // border-spacing: 10px;
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+.table th {
+  background-color: $blue-color;
+  color: white;
+}
+
+.detailsContainer {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  padding: 0 20px 10px 0;
+  width: fit-content;
+  border-bottom: 2px solid $orange-color;
+  margin-bottom: 1rem;
+}
+
+.detailContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  padding-left: 1.5rem;
+}
+
+.gallery {
+  max-width: 800px;
+  margin: auto !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.gallery img {
+  width: 32%;
+  max-height: 200px !important;
+}

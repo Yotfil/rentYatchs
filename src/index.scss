@@ -1,0 +1,11 @@
+@import './styles/normalice.scss';
+@import './styles/var.scss';
+
+.active {
+  border: none;
+  background-color: $blue-color-light;
+  @media screen and (min-width: 600px) {
+    border-bottom: 3px solid $orange-color;
+    background-color: transparent;
+  }
+}
