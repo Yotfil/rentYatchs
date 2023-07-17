@@ -23,7 +23,7 @@ function App() {
           element={<AboutUs />}
         />
         <Route
-          path='detail/:name'
+          path='detail/:category/:name'
           element={<Detail />}
         />
         <Route

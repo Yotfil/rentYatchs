@@ -44,12 +44,22 @@
 
 .itemContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.itemContainerColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   gap: 5px;
 }
 .itemContainer p {
   font-weight: 400;
+  text-align: center;
 }
 .icon {
   color: $orange-color;
@@ -103,6 +113,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   padding-left: 1.5rem;
+}
+
+.locationContainer {
+  margin-bottom: 20px;
+  p {
+    font-weight: 400;
+  }
 }
 
 .gallery {

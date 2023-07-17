@@ -1,46 +1,42 @@
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css'
-import img1 from '../../assets/LUMAR 70Ft/IMG_2535.jpg'
-import img2 from '../../assets/LUMAR 70Ft/IMG_2536.jpg'
-import img3 from '../../assets/LUMAR 70Ft/IMG_2537.jpg'
-import img4 from '../../assets/LUMAR 70Ft/IMG_2538.jpg'
-import img5 from '../../assets/LUMAR 70Ft/IMG_2539.jpg'
 import style from './card.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
-const Card = () => {
-  const slides = [
-    { title: 'First item', img: img1 },
-    { title: 'Second item', img: img2 },
-    { title: 'Third item', img: img3 },
-    { title: 'Fourth item', img: img4 },
-    { title: 'Fifth item', img: img5 },
-  ]
-  const yatch = {
-    yatch: 'LUMAR 70Ft',
-    price: '6.000',
-    images: [
-      { title: 'First item', img: img1 },
-      { title: 'Second item', img: img2 },
-      { title: 'Third item', img: img3 },
-      { title: 'Fourth item', img: img4 },
-      { title: 'Fifth item', img: img5 },
-    ],
-  }
+const Card = ({ yatch }) => {
+  const [dollar, setDollar] = useState(
+    new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+  )
+
+  useEffect(() => {
+    console.log(yatch, 'this')
+    console.log(
+      yatch.price.toLocaleString('en-US', {
+        style: 'currency',
+        currency: 'USD',
+      }),
+      'this'
+    )
+    console.log(dollar.format(yatch.price))
+  }, [])
 
   return (
     <>
       <div className={style.cardContainer}>
         <div className={style.sliderContainer}>
           <Slider className='slider slide'>
-            {yatch.images.map((slide, index) => (
+            {yatch.gallery.map((slide, index) => (
               <div
                 key={index}
                 className={style.imgContainer}>
                 <img
-                  src={slide.img}
+                  src={slide}
                   alt=''
                   className={style.img}
                 />
@@ -49,15 +45,15 @@ const Card = () => {
           </Slider>
         </div>
         <div className={style.infoContainer}>
-          <h3>{yatch.yatch}</h3>
+          <h3>{yatch.yatchName}</h3>
           <div className={style.priceContainer}>
-            <FontAwesomeIcon icon={faDollarSign} />
-            <p className={style.price}>{yatch.price}</p>
+            {/* <FontAwesomeIcon icon={faDollarSign} /> */}
+            <p className={style.price}>{dollar.format(yatch.price)}</p>
             <small className={style.badge}>USD</small>
           </div>
         </div>
         <Link
-          to={`/detail/${yatch.yatch}`}
+          to={`/detail/${yatch.category}/${yatch.url}`}
           className={style.seeMoreBtn}>
           See more
         </Link>

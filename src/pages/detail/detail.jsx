@@ -1,29 +1,48 @@
 import Layout from '../../components/layout/Layout'
-import image from '../../assets/LUMAR 70Ft/IMG_2535.jpg'
 import style from './detail.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDollarSign, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faAnchor, faGear } from '@fortawesome/free-solid-svg-icons'
 import 'lightbox.js-react/dist/index.css'
 import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react'
-import { useEffect } from 'react'
-import img1 from '../../assets/LUMAR 70Ft/IMG_2535.jpg'
-import img2 from '../../assets/LUMAR 70Ft/IMG_2536.jpg'
-import img3 from '../../assets/LUMAR 70Ft/IMG_2537.jpg'
-import img4 from '../../assets/LUMAR 70Ft/IMG_2538.jpg'
-import img5 from '../../assets/LUMAR 70Ft/IMG_2539.jpg'
-import img6 from '../../assets/LUMAR 70Ft/IMG_2540.jpg'
-import img7 from '../../assets/LUMAR 70Ft/IMG_2541.jpg'
+import { useEffect, useState } from 'react'
+import { data } from '../../data/data'
+import img1 from '../../assets/LUMAR_70Ft/1.jpg'
+
+import { useLocation } from 'react-router-dom'
 
 const Detail = () => {
+  const [dollar, setDollar] = useState(
+    new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+  )
+  const location = useLocation()
+  const [yatchSelected, setYatchSelected] = useState(null)
   useEffect(() => {
     initLightboxJS('Insert License key', 'Insert plan type here')
   })
+  useEffect(() => {
+    getCurrentItem()
+  }, [])
+
+  const getCurrentItem = async () => {
+    const [, , category, url] = location.pathname.split('/')
+    console.log(category)
+    console.log(url)
+    console.log(data[category])
+    const yatchFinded = data[category].find(yatch => yatch.url === url)
+    setYatchSelected(yatchFinded)
+    console.log(yatchFinded)
+    console.log(yatchSelected, 'this')
+  }
+
   return (
     <Layout>
       <div className={style.container}>
         <div className={style.containerImage}>
           <img
-            src={image}
+            src={yatchSelected?.mainImage}
             alt=''
             className={style.img}
           />
@@ -49,110 +68,78 @@ const Detail = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <div className={style.itemContainer}>
-                    <FontAwesomeIcon
-                      icon={faDollarSign}
-                      className={style.icon}
-                    />
-                    <p>
-                      <b>6.000</b>{' '}
-                    </p>
-                    <small className={style.badge}>USD</small>
-                  </div>
-                </td>
-                <td>4 hours</td>
-              </tr>
+              {yatchSelected?.prices?.map((price, i) => {
+                return (
+                  <tr key={i}>
+                    <td>
+                      <div className={style.itemContainerColumn}>
+                        <p>
+                          <b>{dollar.format(price.price)}</b> <small className={style.badge}>USD</small>
+                        </p>
+                        {price.days && <p>{price.days}</p>}
+                      </div>
+                    </td>
+                    {price.time ? (
+                      <td>{price.time} hours</td>
+                    ) : (
+                      <td>
+                        <a href='#'>Contact Us</a>{' '}
+                      </td>
+                    )}
+                  </tr>
+                )
+              })}
             </tbody>
           </table>
         </div>
-
-        {/* <div className={style.detailContainer}>
-            <p>Price</p>
-            <div className={style.itemContainer}>
-              <FontAwesomeIcon
-                icon={faDollarSign}
-                className={style.icon}
-              />
-              <p>6.000</p>
-              <small className={style.badge}>USD</small>
-            </div>
-          </div> */}
       </div>
       <div className={style.detailsContainer}>
         <h4 className={style.subtitle}>About it</h4>
         <div className={style.detailContainer}>
+          {yatchSelected?.aboutIt?.map((item, i) => {
+            return (
+              <div
+                key={i}
+                className={style.itemContainer}>
+                <FontAwesomeIcon
+                  icon={faGear}
+                  className={style.icon}
+                />
+                <p>{item}</p>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <div className={style.detailsContainer}>
+        <h4 className={style.subtitle}>Location</h4>
+        <div className={style.detailContainer}>
           <div className={style.itemContainer}>
             <FontAwesomeIcon
-              icon={faGear}
+              icon={faAnchor}
               className={style.icon}
             />
-            <p>Mate</p>
-          </div>
-          <div className={style.itemContainer}>
-            <FontAwesomeIcon
-              icon={faGear}
-              className={style.icon}
-            />
-            <p>Captain</p>
-          </div>
-          <div className={style.itemContainer}>
-            <FontAwesomeIcon
-              icon={faGear}
-              className={style.icon}
-            />
-            <p>Gas</p>
-          </div>
-          <div className={style.itemContainer}>
-            <FontAwesomeIcon
-              icon={faGear}
-              className={style.icon}
-            />
-            <p>Floating Matt</p>
-          </div>
-          <div className={style.itemContainer}>
-            <FontAwesomeIcon
-              icon={faGear}
-              className={style.icon}
-            />
-            <p>Jetskies for 1 hour</p>
+            <p>{yatchSelected?.location}</p>
           </div>
         </div>
       </div>
       <div>
-        <h4 className={style.subtitle}>About it</h4>
+        <h4 className={style.subtitle}>Gallery</h4>
         <div className={style.galleryContainer}>
-          <SlideshowLightbox className={`container grid grid-cols-3 gap-2 mx-auto ${style.gallery}`}>
-            <img
-              className={'w-full rounded'}
-              src={img1}
-            />
-            <img
-              className='w-full rounded'
-              src={img2}
-            />
-            <img
-              className='w-full rounded'
-              src={img3}
-            />
-            <img
-              className='w-full rounded'
-              src={img4}
-            />
-            <img
-              className='w-full rounded'
-              src={img5}
-            />
-            <img
-              className='w-full rounded'
-              src={img6}
-            />
-            <img
-              className='w-full rounded'
-              src={img7}
-            />
-          </SlideshowLightbox>
+          {yatchSelected && (
+            <SlideshowLightbox className={`container grid grid-cols-3 gap-2 mx-auto ${style.gallery}`}>
+              {yatchSelected?.gallery?.map((img, i) => {
+                return (
+                  <img
+                    key={i}
+                    className={'w-full rounded'}
+                    loading='lazy'
+                    src={img}
+                  />
+                )
+              })}
+            </SlideshowLightbox>
+          )}
         </div>
       </div>
     </Layout>
