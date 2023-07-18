@@ -1,4 +1,7 @@
 @import '../../styles/var.scss';
+.mainContainer {
+  padding-top: 120px;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -19,8 +22,26 @@
   }
 }
 
+.backbtn {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 15px;
+  gap: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: #dedede;
+  }
+}
+
 .img {
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 40px #badeff;
 }
 
@@ -44,15 +65,15 @@
 
 .itemContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
 }
 .itemContainerColumn {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 5px;

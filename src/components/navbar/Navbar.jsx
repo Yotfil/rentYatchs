@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import style from './navbar.module.scss'
 import { useState } from 'react'
 import { useWindowSize } from '../../hooks/useWindowSize'
+import logo from '../../assets/logo_white.svg'
 
 const Navbar = () => {
   const [active, setActive] = useState(false)
@@ -44,11 +45,34 @@ const Navbar = () => {
             <NavLink
               onClick={handleMenu}
               className={style.link}
+              to='jetskies'>
+              Jetskies
+            </NavLink>
+          </li>
+          <li className={style.li}>
+            <NavLink
+              onClick={handleMenu}
+              className={style.link}
+              to='transportation'>
+              Transportation
+            </NavLink>
+          </li>
+          <li className={style.li}>
+            <NavLink
+              onClick={handleMenu}
+              className={style.link}
               to='about-us'>
               About us
             </NavLink>
           </li>
         </ul>
+        <figure>
+          <img
+            src={logo}
+            alt='logo'
+            className={style.logo}
+          />
+        </figure>
         <button className={style.contact}>Contact</button>
       </nav>
     </header>
