@@ -11,12 +11,18 @@ import { imagesLeopard119ft } from './leopard_119ft'
 import { imagesMarques70ft } from './marques_70ft'
 import { imagesNewPage75ft } from './new_page75gt'
 import { imagesRegal90ft } from './regal_90ft'
+import { imagesSeaRaySundancer38ft } from './sea_ray_sundancer38ft'
+import { imagesSeaRay50ft } from './sea_ray50ft'
+import { imagesSeaRay52ft } from './sea_ray52ft'
+import { imagesSeaRaySedanFly48ft } from './sea_ray_sedan_fly_48ft'
+import { imagesSeaRaySundancer50ft } from './sea_ray_sundancer50ft'
+import { imagesSundancerSport60ft } from './sundancer_sport60ft'
 
 export const data = {
-  yatch: [
+  yachts: [
     {
       yatchName: 'Absolute 60ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'absolute_60ft',
       description: '',
       location: '',
@@ -39,7 +45,7 @@ export const data = {
     },
     {
       yatchName: 'Axopar Brabus 40ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'axopar_brabus_40ft',
       description: 'Only $1500. Includes: captain, mate, gas and floating Matt. Location: Miami Beach',
       location: 'Miami Beach',
@@ -62,7 +68,7 @@ export const data = {
     },
     {
       yatchName: 'Azimut 52ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'azimut_52ft',
       description: '',
       location: '',
@@ -86,7 +92,7 @@ export const data = {
     },
     {
       yatchName: 'Azimut 55ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'azimut_55ft',
       description:
         'Monday - Friday $1700. Weekends $1900. Includes: captain, mate, gas, floating Matt and jetski for 1 hour. Location: Miamy Beach',
@@ -119,7 +125,7 @@ export const data = {
     },
     {
       yatchName: 'Cruiser 45ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'cruiser_45ft',
       description:
         'Monday-Friday 4 hours $899. Weekends 4 hours $999. Includes: captain, mate ,gas, floating Matt and 1 jetski for 1 hour! Location: Miami River 5 star location.',
@@ -151,7 +157,7 @@ export const data = {
     },
     {
       yatchName: 'Cruiser 50 ft fly bridge',
-      category: 'yatch',
+      category: 'yachts',
       url: 'cruiser_sport_45ft',
       description:
         'Cruiser 50 ft fly bridge. Summer special: Monday-Friday 3 hours $899-4 hours $1100-weekends 4 hours $1400 Includes:captain, mate, gas and floating Matt. location: Miami Beach',
@@ -181,7 +187,7 @@ export const data = {
     },
     {
       yatchName: 'Escápa Silverton 50ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'escapa_silverton_50ft',
       description:
         'Escápa Silverton 50ft available 4 hours $1200 Includes: captain,mate,gas,cooler, and floating Matt ',
@@ -211,7 +217,7 @@ export const data = {
     },
     {
       yatchName: 'Icon 65ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'icon_65ft',
       description: '',
       location: '',
@@ -229,7 +235,7 @@ export const data = {
     },
     {
       yatchName: 'Leopardo 119ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'leopardo_119ft',
       description:
         'Leopardo 119ft available now for only $5500! Includes: captain, mate, floating Matt, gas and 2 jetskies for 1 hour ! Location:Downtown miami',
@@ -255,10 +261,10 @@ export const data = {
     },
     {
       yatchName: 'Lumar 70ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'lumar_70ft',
       description:
-        '4 hours $2.500 all in! Includes: captain, mate, gas, floating Matt and 2 jetskies for 1 hour. Location: Miami River',
+        '4d hours $2.500 all in! Includes: captain, mate, gas, floating Matt and 2 jetskies for 1 hour. Location: Miami River',
       location: 'Miami River',
       mainImage: imagesLumar70ft.img1,
       price: '2500',
@@ -281,7 +287,7 @@ export const data = {
     },
     {
       yatchName: 'Marques 70ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'marques_70ft',
       description: '',
       location: '',
@@ -305,7 +311,7 @@ export const data = {
     },
     {
       yatchName: 'New Page 75ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'new_page_75ft',
       description: '',
       location: '',
@@ -328,7 +334,7 @@ export const data = {
     },
     {
       yatchName: 'Regal 90ft',
-      category: 'yatch',
+      category: 'yachts',
       url: 'regal_90ft',
       description:
         'Regal 90 ft available 4 hours $4500 Includes: captain, mate, gas and floating Matt and 1 jetski for 1 hour .',
@@ -348,6 +354,163 @@ export const data = {
         imagesRegal90ft.img3,
         imagesRegal90ft.img4,
         imagesRegal90ft.img5,
+      ],
+    },
+    {
+      yatchName: 'Sea Ray Sundancer 38ft',
+      category: 'yachts',
+      url: 'sea_ray_sundancer_38ft',
+      description: '',
+      location: '',
+      mainImage: imagesSeaRaySundancer38ft.img1,
+      price: '',
+      prices: [
+        {
+          price: '',
+          time: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesSeaRaySundancer38ft.img1,
+        imagesSeaRaySundancer38ft.img2,
+        imagesSeaRaySundancer38ft.img3,
+        imagesSeaRaySundancer38ft.img4,
+      ],
+    },
+    {
+      yatchName: 'Sea Ray 50ft',
+      category: 'yachts',
+      url: 'sea_ray_50ft',
+      description:
+        '4 hours &1500 all in. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesSeaRay50ft.img1,
+      price: '1500',
+      prices: [
+        {
+          price: '1500',
+          time: '4',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '1 jetski for 1 hour'],
+      gallery: [
+        imagesSeaRay50ft.img1,
+        imagesSeaRay50ft.img2,
+        imagesSeaRay50ft.img3,
+        imagesSeaRay50ft.img4,
+        imagesSeaRay50ft.img5,
+      ],
+    },
+    {
+      yatchName: 'Sea Ray 52ft',
+      category: 'yachts',
+      url: 'sea_ray_52ft',
+      description:
+        '4 hours &1500 all in. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesSeaRay52ft.img2,
+      price: '1500',
+      prices: [
+        {
+          price: '1500',
+          time: '4',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '1 jetski for 1 hour'],
+      gallery: [
+        imagesSeaRay52ft.img1,
+        imagesSeaRay52ft.img2,
+        imagesSeaRay52ft.img3,
+        imagesSeaRay52ft.img4,
+        imagesSeaRay52ft.img5,
+      ],
+    },
+    {
+      yatchName: 'Sea Ray Sedan Fly 48ft',
+      category: 'yachts',
+      url: 'sea_ray_sedan_fly_48ft',
+      description:
+        'Sea ray sedan bridge 48 ft summer special: Monday-Thursday $999 Weekends $1200 Location: Miami Beach Includes: captain,mate,gas and floating Matt!',
+      location: 'Miami Beach',
+      mainImage: imagesSeaRaySedanFly48ft.img2,
+      price: '999',
+      prices: [
+        {
+          price: '999',
+          time: '',
+          days: 'Monday - Thursday',
+        },
+        {
+          price: '1200',
+          time: '',
+          days: 'Weekends',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesSeaRaySedanFly48ft.img1,
+        imagesSeaRaySedanFly48ft.img2,
+        imagesSeaRaySedanFly48ft.img3,
+        imagesSeaRaySedanFly48ft.img4,
+        imagesSeaRaySedanFly48ft.img5,
+        imagesSeaRaySedanFly48ft.img6,
+        imagesSeaRaySedanFly48ft.img7,
+      ],
+    },
+    {
+      yatchName: 'Sea Ray Sundancer 50ft',
+      category: 'yachts',
+      url: 'sea_ray_sundancer_50ft',
+      description:
+        'Searay Sundancer 50ft available 4 hours $1450 Includes: captain , mate , cooler ,floating Matt and 1 jetski for 1 hour free',
+      location: 'Miami Beach',
+      mainImage: imagesSeaRaySundancer50ft.img2,
+      price: '1450',
+      prices: [
+        {
+          price: '1450',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '1 jetski for 1 hour free'],
+      gallery: [
+        imagesSeaRaySundancer50ft.img1,
+        imagesSeaRaySundancer50ft.img2,
+        imagesSeaRaySundancer50ft.img3,
+        imagesSeaRaySundancer50ft.img4,
+        imagesSeaRaySundancer50ft.img5,
+        imagesSeaRaySundancer50ft.img6,
+      ],
+    },
+    {
+      yatchName: 'Sundancer 60ft',
+      category: 'yachts',
+      url: 'sundancer_60ft',
+      description: '',
+      location: '',
+      mainImage: imagesSundancerSport60ft.img1,
+      price: '',
+      prices: [
+        {
+          price: '',
+          time: '',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', ''],
+      gallery: [
+        imagesSundancerSport60ft.img1,
+        imagesSundancerSport60ft.img2,
+        imagesSundancerSport60ft.img3,
+        imagesSundancerSport60ft.img4,
+        imagesSundancerSport60ft.img5,
+        imagesSundancerSport60ft.img6,
+        imagesSundancerSport60ft.img7,
+        imagesSundancerSport60ft.img8,
+        imagesSundancerSport60ft.img9,
+        imagesSundancerSport60ft.img10,
       ],
     },
   ],

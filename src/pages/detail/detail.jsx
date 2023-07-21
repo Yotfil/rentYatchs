@@ -18,7 +18,7 @@ const Detail = () => {
   )
   const location = useLocation()
   const navidate = useNavigate()
-  const [yatchSelected, setYatchSelected] = useState(null)
+  const [yachtselected, setYachtsSelected] = useState(null)
   useEffect(() => {
     initLightboxJS('Insert License key', 'Insert plan type here')
   })
@@ -28,8 +28,8 @@ const Detail = () => {
 
   const getCurrentItem = async () => {
     const [, , category, url] = location.pathname.split('/')
-    const yatchFinded = data[category].find(yatch => yatch.url === url)
-    setYatchSelected(yatchFinded)
+    const yatchFinded = data[category].find(yachts => yachts.url === url)
+    setYachtsSelected(yatchFinded)
   }
 
   const goBack = () => {
@@ -53,14 +53,14 @@ const Detail = () => {
         <div className={style.container}>
           <div className={style.containerImage}>
             <img
-              src={yatchSelected?.mainImage}
+              src={yachtselected?.mainImage}
               alt=''
               className={style.img}
             />
           </div>
           <div className={style.infoContainer}>
-            <h2>{yatchSelected?.yatchName}</h2>
-            <p>{yatchSelected?.description}</p>
+            <h2>{yachtselected?.yatchName}</h2>
+            <p>{yachtselected?.description}</p>
             <button className={style.button}>Book now</button>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Detail = () => {
                 </tr>
               </thead>
               <tbody>
-                {yatchSelected?.prices?.map((price, i) => {
+                {yachtselected?.prices?.map((price, i) => {
                   return (
                     <tr key={i}>
                       <td>
@@ -103,7 +103,7 @@ const Detail = () => {
         <div className={style.detailsContainer}>
           <h4 className={style.subtitle}>About it</h4>
           <div className={style.detailContainer}>
-            {yatchSelected?.aboutIt?.map((item, i) => {
+            {yachtselected?.aboutIt?.map((item, i) => {
               return (
                 <div
                   key={i}
@@ -118,7 +118,7 @@ const Detail = () => {
             })}
           </div>
         </div>
-        {yatchSelected?.location && (
+        {yachtselected?.location && (
           <div className={style.detailsContainer}>
             <h4 className={style.subtitle}>Location</h4>
             <div className={style.detailContainer}>
@@ -127,7 +127,7 @@ const Detail = () => {
                   icon={faAnchor}
                   className={style.icon}
                 />
-                <p>{yatchSelected?.location}</p>
+                <p>{yachtselected?.location}</p>
               </div>
             </div>
           </div>
@@ -135,9 +135,9 @@ const Detail = () => {
         <div>
           <h4 className={style.subtitle}>Gallery</h4>
           <div className={style.galleryContainer}>
-            {yatchSelected && (
+            {yachtselected && (
               <SlideshowLightbox className={`container grid grid-cols-3 gap-2 mx-auto ${style.gallery}`}>
-                {yatchSelected?.gallery?.map((img, i) => {
+                {yachtselected?.gallery?.map((img, i) => {
                   return (
                     <img
                       key={i}

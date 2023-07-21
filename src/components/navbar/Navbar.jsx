@@ -17,6 +17,13 @@ const Navbar = () => {
   return (
     <header className={`${style.container} ${active ? style.active : ''}`}>
       <nav className={style.nav}>
+        <figure className={style.figure}>
+          <img
+            src={logo}
+            alt='logo'
+            className={style.logo}
+          />
+        </figure>
         <div
           className={style.hamburguer}
           onClick={handleMenu}>
@@ -37,8 +44,8 @@ const Navbar = () => {
             <NavLink
               onClick={handleMenu}
               className={style.link}
-              to='yatchs'>
-              Yatchs
+              to='yachts'>
+              Yachts
             </NavLink>
           </li>
           <li className={style.li}>
@@ -66,13 +73,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <figure>
-          <img
-            src={logo}
-            alt='logo'
-            className={style.logo}
-          />
-        </figure>
+
         <button className={style.contact}>Contact</button>
       </nav>
     </header>

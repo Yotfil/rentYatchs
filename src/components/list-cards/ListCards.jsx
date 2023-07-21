@@ -5,11 +5,11 @@ const ListCards = () => {
   return (
     <>
       <div className={style.containerCards}>
-        {data.yatch.map(yatch => {
+        {data.yachts.map(yachts => {
           return (
             <Card
-              key={yatch.yatchName}
-              yatch={yatch}></Card>
+              key={yachts.yatchName}
+              yachts={yachts}></Card>
           )
         })}
       </div>

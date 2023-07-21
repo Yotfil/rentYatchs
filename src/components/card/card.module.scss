@@ -14,7 +14,7 @@
 }
 
 .cardContainer:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   box-shadow: 0 4px 6px #c4c4c4;
 }
 
@@ -42,6 +42,14 @@
   align-items: center;
   width: 100%;
   padding: 10px;
+  h3 {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    inline-size: 180px;
+    overflow: hidden;
+    font-size: 1rem;
+  }
 }
 
 .priceContainer {
@@ -53,6 +61,7 @@
 
 .price {
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .badge {
