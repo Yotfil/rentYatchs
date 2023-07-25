@@ -8,6 +8,7 @@ import Detail from './pages/detail/detail'
 import NotFound from './pages/not-found'
 import Jetskies from './pages/jetskies/jetskies'
 import Transportation from './pages/transportation/transportation'
+import Footer from './components/footer/footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,6 +46,7 @@ function App() {
           element={<NotFound />}
         />
       </Routes>
+      <Footer></Footer>
     </>
   )
 }

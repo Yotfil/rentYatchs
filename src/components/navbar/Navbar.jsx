@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import style from './navbar.module.scss'
 import { useState } from 'react'
 import { useWindowSize } from '../../hooks/useWindowSize'
@@ -17,13 +17,18 @@ const Navbar = () => {
   return (
     <header className={`${style.container} ${active ? style.active : ''}`}>
       <nav className={style.nav}>
-        <figure className={style.figure}>
-          <img
-            src={logo}
-            alt='logo'
-            className={style.logo}
-          />
-        </figure>
+        <Link
+          to='/'
+          className={style.figure}>
+          <figure>
+            <img
+              src={logo}
+              alt='logo'
+              className={style.logo}
+            />
+          </figure>
+        </Link>
+
         <div
           className={style.hamburguer}
           onClick={handleMenu}>

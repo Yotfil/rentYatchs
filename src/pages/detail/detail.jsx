@@ -1,7 +1,7 @@
 import Layout from '../../components/layout/Layout'
 import style from './detail.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnchor, faArrowLeft, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faAnchor, faArrowLeft, faGear, faUsers } from '@fortawesome/free-solid-svg-icons'
 import 'lightbox.js-react/dist/index.css'
 import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react'
 import { useEffect, useState } from 'react'
@@ -18,7 +18,7 @@ const Detail = () => {
   )
   const location = useLocation()
   const navidate = useNavigate()
-  const [yachtselected, setYachtsSelected] = useState(null)
+  const [itemSelected, setItemSelected] = useState(null)
   useEffect(() => {
     initLightboxJS('Insert License key', 'Insert plan type here')
   })
@@ -28,8 +28,8 @@ const Detail = () => {
 
   const getCurrentItem = async () => {
     const [, , category, url] = location.pathname.split('/')
-    const yatchFinded = data[category].find(yachts => yachts.url === url)
-    setYachtsSelected(yatchFinded)
+    const itemFinded = data[category].find(item => item.url === url)
+    setItemSelected(itemFinded)
   }
 
   const goBack = () => {
@@ -53,14 +53,14 @@ const Detail = () => {
         <div className={style.container}>
           <div className={style.containerImage}>
             <img
-              src={yachtselected?.mainImage}
+              src={itemSelected?.mainImage}
               alt=''
               className={style.img}
             />
           </div>
           <div className={style.infoContainer}>
-            <h2>{yachtselected?.yatchName}</h2>
-            <p>{yachtselected?.description}</p>
+            <h2>{itemSelected?.itemName}</h2>
+            <p>{itemSelected?.description}</p>
             <button className={style.button}>Book now</button>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Detail = () => {
                 </tr>
               </thead>
               <tbody>
-                {yachtselected?.prices?.map((price, i) => {
+                {itemSelected?.prices?.map((price, i) => {
                   return (
                     <tr key={i}>
                       <td>
@@ -100,10 +100,27 @@ const Detail = () => {
             </table>
           </div>
         </div>
+        {itemSelected?.capacity ? (
+          <div className={style.detailsContainer}>
+            <h4 className={style.subtitle}>Capacity</h4>
+            <div className={style.detailContainer}>
+              <div className={style.itemContainer}>
+                <FontAwesomeIcon
+                  icon={faUsers}
+                  className={style.icon}
+                />
+                <p>{itemSelected.capacity} passengers</p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+
         <div className={style.detailsContainer}>
-          <h4 className={style.subtitle}>About it</h4>
+          <h4 className={style.subtitle}>Includes</h4>
           <div className={style.detailContainer}>
-            {yachtselected?.aboutIt?.map((item, i) => {
+            {itemSelected?.aboutIt?.map((item, i) => {
               return (
                 <div
                   key={i}
@@ -118,7 +135,7 @@ const Detail = () => {
             })}
           </div>
         </div>
-        {yachtselected?.location && (
+        {itemSelected?.location && (
           <div className={style.detailsContainer}>
             <h4 className={style.subtitle}>Location</h4>
             <div className={style.detailContainer}>
@@ -127,7 +144,7 @@ const Detail = () => {
                   icon={faAnchor}
                   className={style.icon}
                 />
-                <p>{yachtselected?.location}</p>
+                <p>{itemSelected?.location}</p>
               </div>
             </div>
           </div>
@@ -135,9 +152,9 @@ const Detail = () => {
         <div>
           <h4 className={style.subtitle}>Gallery</h4>
           <div className={style.galleryContainer}>
-            {yachtselected && (
+            {itemSelected && (
               <SlideshowLightbox className={`container grid grid-cols-3 gap-2 mx-auto ${style.gallery}`}>
-                {yachtselected?.gallery?.map((img, i) => {
+                {itemSelected?.gallery?.map((img, i) => {
                   return (
                     <img
                       key={i}

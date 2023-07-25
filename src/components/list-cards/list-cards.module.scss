@@ -3,4 +3,11 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 10px;
   row-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subTitle {
+  margin: 50px 0 20px;
+  padding-left: 40px;
+  width: 100%;
 }

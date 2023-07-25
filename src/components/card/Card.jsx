@@ -6,7 +6,7 @@ import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-const Card = ({ yachts }) => {
+const Card = ({ item }) => {
   const [dollar, setDollar] = useState(
     new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -14,24 +14,12 @@ const Card = ({ yachts }) => {
     })
   )
 
-  useEffect(() => {
-    console.log(yachts, 'this')
-    console.log(
-      yachts.price.toLocaleString('en-US', {
-        style: 'currency',
-        currency: 'USD',
-      }),
-      'this'
-    )
-    console.log(dollar.format(yachts.price))
-  }, [])
-
   return (
     <>
       <div className={style.cardContainer}>
         <div className={style.sliderContainer}>
           <Slider className='slider slide'>
-            {yachts.gallery.map((slide, index) => (
+            {item.gallery.map((slide, index) => (
               <div
                 key={index}
                 className={style.imgContainer}>
@@ -45,15 +33,15 @@ const Card = ({ yachts }) => {
           </Slider>
         </div>
         <div className={style.infoContainer}>
-          <h3>{yachts.yatchName}</h3>
+          <h3>{item.itemName}</h3>
           <div className={style.priceContainer}>
             {/* <FontAwesomeIcon icon={faDollarSign} /> */}
-            <p className={style.price}>{dollar.format(yachts.price)}</p>
+            <p className={style.price}>{dollar.format(item.price)}</p>
             <small className={style.badge}>USD</small>
           </div>
         </div>
         <Link
-          to={`/detail/${yachts.category}/${yachts.url}`}
+          to={`/detail/${item.category}/${item.url}`}
           className={style.seeMoreBtn}>
           See more
         </Link>

@@ -1,6 +1,9 @@
 @import '../../styles/var.scss';
 .mainContainer {
-  padding-top: 120px;
+  padding-top: 40px;
+  @media screen and (min-width: 800px) {
+    padding-top: 120px;
+  }
 }
 .container {
   display: flex;
@@ -24,19 +27,28 @@
 
 .backbtn {
   position: absolute;
-  top: 110px;
+  top: 70px;
+  padding: 5px 10px;
+  background-color: #3333338a;
+  color: orange;
+  border-radius: 4px;
+  border-radius: 4px;
   left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
-  padding: 10px 15px;
   gap: 10px;
-  background-color: transparent;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   &:hover {
     background-color: #dedede;
+  }
+  @media screen and (min-width: 800px) {
+    top: 110px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: $blue-color;
   }
 }
 

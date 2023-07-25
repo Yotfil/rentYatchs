@@ -1,4 +1,5 @@
 import { imagesLumar70ft } from './lumar70ft'
+import { imagesAdonis80ft } from './adonis_80ft'
 import { imagesAxoparBrabus40ft } from './axopar_brabus40ft'
 import { imagesAbsolute60ft } from './absolute_60ft'
 import { imagesAzimut55ft } from './azimut_55ft'
@@ -17,11 +18,21 @@ import { imagesSeaRay52ft } from './sea_ray52ft'
 import { imagesSeaRaySedanFly48ft } from './sea_ray_sedan_fly_48ft'
 import { imagesSeaRaySundancer50ft } from './sea_ray_sundancer50ft'
 import { imagesSundancerSport60ft } from './sundancer_sport60ft'
+import { imagesSunseeker65ft } from './sunseeker65ft'
+import { imagesSunseeker80ft } from './sunseeker80ft'
+import { imagesSunseekerPreadator80ft } from './sunseeker_predator_80ft'
+import { imagesThales } from './thales'
+import { imagesViking } from './viking'
+import { imagesYamaha } from './yamaha_ar25ft'
+import { imagesTransportation } from './transportation'
+import { imagesMercedesBenz } from './m_benz'
+import { imagesWaveRunner } from './wave_runner'
+import { imagesJetCar } from './jetcar'
 
 export const data = {
   yachts: [
     {
-      yatchName: 'Absolute 60ft',
+      itemName: 'Absolute 60ft',
       category: 'yachts',
       url: 'absolute_60ft',
       description: '',
@@ -44,7 +55,35 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Axopar Brabus 40ft',
+      itemName: 'Adonis 80ft',
+      category: 'yachts',
+      url: 'adonis_80ft',
+      description: 'Adonis 80 ft available 4 hours $5000 Includes : captain, mate, gas, floating Matt.',
+      location: '',
+      mainImage: imagesAdonis80ft.img1,
+      price: '5000',
+      prices: [
+        {
+          price: '5000',
+          time: '4',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesAdonis80ft.img1,
+        imagesAdonis80ft.img2,
+        imagesAdonis80ft.img3,
+        imagesAdonis80ft.img4,
+        imagesAdonis80ft.img5,
+        imagesAdonis80ft.img6,
+        imagesAdonis80ft.img7,
+        imagesAdonis80ft.img8,
+        imagesAdonis80ft.img9,
+        imagesAdonis80ft.img10,
+      ],
+    },
+    {
+      itemName: 'Axopar Brabus 40ft',
       category: 'yachts',
       url: 'axopar_brabus_40ft',
       description: 'Only $1500. Includes: captain, mate, gas and floating Matt. Location: Miami Beach',
@@ -67,7 +106,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Azimut 52ft',
+      itemName: 'Azimut 52ft',
       category: 'yachts',
       url: 'azimut_52ft',
       description: '',
@@ -91,7 +130,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Azimut 55ft',
+      itemName: 'Azimut 55ft',
       category: 'yachts',
       url: 'azimut_55ft',
       description:
@@ -124,7 +163,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Cruiser 45ft',
+      itemName: 'Cruiser 45ft',
       category: 'yachts',
       url: 'cruiser_45ft',
       description:
@@ -156,7 +195,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Cruiser 50 ft fly bridge',
+      itemName: 'Cruiser 50 ft fly bridge',
       category: 'yachts',
       url: 'cruiser_sport_45ft',
       description:
@@ -186,7 +225,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Escápa Silverton 50ft',
+      itemName: 'Escápa Silverton 50ft',
       category: 'yachts',
       url: 'escapa_silverton_50ft',
       description:
@@ -216,7 +255,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Icon 65ft',
+      itemName: 'Icon 65ft',
       category: 'yachts',
       url: 'icon_65ft',
       description: '',
@@ -234,7 +273,7 @@ export const data = {
       gallery: [imagesIcon65ft.img1, imagesIcon65ft.img2, imagesIcon65ft.img3],
     },
     {
-      yatchName: 'Leopardo 119ft',
+      itemName: 'Leopardo 119ft',
       category: 'yachts',
       url: 'leopardo_119ft',
       description:
@@ -260,7 +299,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Lumar 70ft',
+      itemName: 'Lumar 70ft',
       category: 'yachts',
       url: 'lumar_70ft',
       description:
@@ -286,7 +325,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Marques 70ft',
+      itemName: 'Marques 70ft',
       category: 'yachts',
       url: 'marques_70ft',
       description: '',
@@ -310,7 +349,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'New Page 75ft',
+      itemName: 'New Page 75ft',
       category: 'yachts',
       url: 'new_page_75ft',
       description: '',
@@ -333,7 +372,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Regal 90ft',
+      itemName: 'Regal 90ft',
       category: 'yachts',
       url: 'regal_90ft',
       description:
@@ -357,7 +396,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sea Ray Sundancer 38ft',
+      itemName: 'Sea Ray Sundancer 38ft',
       category: 'yachts',
       url: 'sea_ray_sundancer_38ft',
       description: '',
@@ -379,7 +418,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sea Ray 50ft',
+      itemName: 'Sea Ray 50ft',
       category: 'yachts',
       url: 'sea_ray_50ft',
       description:
@@ -403,7 +442,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sea Ray 52ft',
+      itemName: 'Sea Ray 52ft',
       category: 'yachts',
       url: 'sea_ray_52ft',
       description:
@@ -427,7 +466,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sea Ray Sedan Fly 48ft',
+      itemName: 'Sea Ray Sedan Fly 48ft',
       category: 'yachts',
       url: 'sea_ray_sedan_fly_48ft',
       description:
@@ -459,7 +498,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sea Ray Sundancer 50ft',
+      itemName: 'Sea Ray Sundancer 50ft',
       category: 'yachts',
       url: 'sea_ray_sundancer_50ft',
       description:
@@ -485,7 +524,7 @@ export const data = {
       ],
     },
     {
-      yatchName: 'Sundancer 60ft',
+      itemName: 'Sundancer 60ft',
       category: 'yachts',
       url: 'sundancer_60ft',
       description: '',
@@ -512,6 +551,255 @@ export const data = {
         imagesSundancerSport60ft.img9,
         imagesSundancerSport60ft.img10,
       ],
+    },
+    {
+      itemName: 'Sunseeker 65ft',
+      category: 'yachts',
+      url: 'sunseeker_65ft',
+      description:
+        'Sunseeker 65ft summer special: Monday-friday $1800 Weekends $1900 Includes: captain, mate, gas, floating Matt and 1 jetski for 1 hour!',
+      location: '',
+      mainImage: imagesSunseeker65ft.img1,
+      price: '1800',
+      prices: [
+        {
+          price: '1800',
+          time: '',
+          days: 'Monday - Friday',
+        },
+        {
+          price: '1900',
+          time: '',
+          days: 'Weekends',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '1 jetski for 1 hour!'],
+      gallery: [
+        imagesSunseeker65ft.img1,
+        imagesSunseeker65ft.img2,
+        imagesSunseeker65ft.img3,
+        imagesSunseeker65ft.img4,
+        imagesSunseeker65ft.img5,
+        imagesSunseeker65ft.img6,
+        imagesSunseeker65ft.img7,
+      ],
+    },
+    {
+      itemName: 'Sunseeker 80ft',
+      category: 'yachts',
+      url: 'sunseeker_80ft',
+      description:
+        'Sunseeker 80ft 4 hours for only $3000! Includes: captain, mate, gas, floating matt and 2 jetskies for 1 hour each! Book now!',
+      location: '',
+      mainImage: imagesSunseeker80ft.img1,
+      price: '3000',
+      prices: [
+        {
+          price: '3000',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '2 jetskies for 1 hour'],
+      gallery: [
+        imagesSunseeker80ft.img1,
+        imagesSunseeker80ft.img2,
+        imagesSunseeker80ft.img3,
+        imagesSunseeker80ft.img4,
+        imagesSunseeker80ft.img5,
+      ],
+    },
+    {
+      itemName: 'Sunseeker Predator 80ft',
+      category: 'yachts',
+      url: 'sunseeker_predator_80ft',
+      description:
+        'Sunseeker predetor 80 ft available now $4500 Includes: captain, mate, floating Matt,gas and 2 jetskies for 1 hour! Location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesSunseekerPreadator80ft.img1,
+      price: '4500',
+      prices: [
+        {
+          price: '4500',
+          time: '',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '2 jetskies for 1 hour'],
+      gallery: [
+        imagesSunseekerPreadator80ft.img1,
+        imagesSunseekerPreadator80ft.img2,
+        imagesSunseekerPreadator80ft.img3,
+        imagesSunseekerPreadator80ft.img4,
+        imagesSunseekerPreadator80ft.img5,
+        imagesSunseekerPreadator80ft.img6,
+        imagesSunseekerPreadator80ft.img7,
+        imagesSunseekerPreadator80ft.img8,
+      ],
+    },
+    {
+      itemName: 'Thales',
+      category: 'yachts',
+      url: 'thales',
+      description: '',
+      location: '',
+      mainImage: imagesThales.img1,
+      price: '',
+      prices: [
+        {
+          price: '',
+          time: '',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesThales.img1,
+        imagesThales.img2,
+        imagesThales.img3,
+        imagesThales.img4,
+        imagesThales.img5,
+        imagesThales.img6,
+        imagesThales.img7,
+      ],
+    },
+    {
+      itemName: 'Viking 55ft',
+      category: 'yachts',
+      url: 'viking_55ft',
+      description: 'Viking 55ft available: 4 hours $1500 Includes: captain, mate, gas, cooler and floating Matt ',
+      location: '',
+      mainImage: imagesViking.img1,
+      price: '1500',
+      prices: [
+        {
+          price: '1500',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesViking.img1,
+        imagesViking.img2,
+        imagesViking.img3,
+        imagesViking.img4,
+        imagesViking.img5,
+        imagesViking.img6,
+        imagesViking.img7,
+        imagesViking.img8,
+        imagesViking.img9,
+        imagesViking.img10,
+      ],
+    },
+    {
+      itemName: 'Yamaha 25ft',
+      category: 'yachts',
+      url: 'yamaha_25ft',
+      description:
+        'Yamaha ar25 ft available 4 hours $499 Includes: captain, gas, cooler, Bluetooth speakers and floating Matt.',
+      location: '',
+      mainImage: imagesYamaha.img1,
+      price: '499',
+      prices: [
+        {
+          price: '499',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers'],
+      gallery: [imagesYamaha.img1, imagesYamaha.img2],
+    },
+  ],
+  transportation: [
+    {
+      itemName: 'Transportation services',
+      category: 'transportation',
+      url: 'transportation_services',
+      description: '',
+      location: '',
+      mainImage: imagesTransportation.img1,
+      price: '75',
+      prices: [
+        {
+          price: '75',
+          time: '1',
+          days: '',
+        },
+      ],
+      aboutIt: ['Driver', 'Gas'],
+      gallery: [
+        imagesTransportation.img1,
+        imagesTransportation.img2,
+        imagesTransportation.img3,
+        imagesTransportation.img4,
+      ],
+    },
+    {
+      itemName: 'Mercedes Benz',
+      category: 'transportation',
+      url: 'merdedes_benz',
+      description: 'Mercedes Benz 2022 sprinter $125 per hour 14 passengers Includes: driver and gas .',
+      capacity: '14',
+      location: '',
+      mainImage: imagesMercedesBenz.img1,
+      price: '125',
+      prices: [
+        {
+          price: '125',
+          time: '1',
+          days: '',
+        },
+      ],
+      aboutIt: ['Driver', 'Gas'],
+      gallery: [
+        imagesMercedesBenz.img1,
+        imagesMercedesBenz.img2,
+        imagesMercedesBenz.img3,
+        imagesMercedesBenz.img4,
+        imagesMercedesBenz.img5,
+      ],
+    },
+  ],
+  jetskies: [
+    {
+      itemName: 'Wave Runner',
+      category: 'jetskies',
+      url: 'wave_runner',
+      description: '',
+      capacity: '',
+      location: '',
+      mainImage: imagesWaveRunner.img1,
+      price: '',
+      prices: [
+        {
+          price: '',
+          time: '',
+          days: '',
+        },
+      ],
+      aboutIt: ['Gas'],
+      gallery: [imagesWaveRunner.img1],
+    },
+    {
+      itemName: 'Jet Car',
+      category: 'jetskies',
+      url: 'jet_car',
+      description: '',
+      capacity: '',
+      location: '',
+      mainImage: imagesJetCar.img1,
+      price: '399',
+      prices: [
+        {
+          price: '399',
+          time: '1',
+          days: '',
+        },
+      ],
+      aboutIt: ['Gas'],
+      gallery: [imagesJetCar.img1],
     },
   ],
 }
