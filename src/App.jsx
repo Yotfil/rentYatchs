@@ -8,7 +8,7 @@ import Detail from './pages/detail/detail'
 import NotFound from './pages/not-found'
 import Jetskies from './pages/jetskies/jetskies'
 import Transportation from './pages/transportation/transportation'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
