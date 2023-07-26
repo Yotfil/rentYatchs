@@ -9,7 +9,7 @@ const Navbar = () => {
   const [witdth, height] = useWindowSize()
 
   const handleMenu = () => {
-    if (witdth < 600) {
+    if (witdth < 800) {
       setActive(prev => !prev)
     }
   }
