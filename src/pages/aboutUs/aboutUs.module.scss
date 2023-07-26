@@ -9,3 +9,27 @@
 .text {
   letter-spacing: 0.3px;
 }
+
+.containerSlider {
+  margin-top: 50px;
+  position: relative;
+  height: fit-content;
+  min-height: 220px;
+  @media screen and (min-width: 800px) {
+    height: 500px;
+  }
+}
+
+.imgContainer {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 800px) {
+    height: 500px;
+  }
+}
+.img {
+  width: 100%;
+}

@@ -1,7 +1,19 @@
+import logoIg from '../../assets/instagram.png'
 import styles from './footer.module.scss'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <a
+        href='https://www.instagram.com/luxury305rentals/?igshid=NTc4MTIwNjQ2YQ%3D%3D'
+        target='_blank'
+        className={styles.follow}>
+        <p>Follow Us</p>
+        <img
+          src={logoIg}
+          alt='Logo instagram'
+        />
+      </a>
+
       <p>
         <small>
           © Luxury 305 Rentals, All Rights Reserved. More information

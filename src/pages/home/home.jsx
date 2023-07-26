@@ -3,12 +3,27 @@ import ListCards from '../../components/list-cards/ListCards'
 import style from './home.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <>
-      <div className={style.banner}></div>
-      <Layout title={'The best experience'}>
+      <div className={style.banner}>
+        <div>
+          <p>Live the best experience</p>
+          <Link
+            className={style.button}
+            to={'/yachts'}>
+            Take a look at our yachts.
+          </Link>
+          <a
+            href='#'
+            className={`${style.button} ${style.buttonRed}`}>
+            Rent a yatch
+          </a>
+        </div>
+      </div>
+      <Layout>
         <div className={style.advantages}>
           <div className={style.advantage}>
             <FontAwesomeIcon

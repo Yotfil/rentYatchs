@@ -1,6 +1,10 @@
 @import './styles/normalice.scss';
 @import './styles/var.scss';
 
+body {
+  font-family: 'Work Sans';
+}
+
 .active {
   border: none;
   background-color: $blue-color-light;

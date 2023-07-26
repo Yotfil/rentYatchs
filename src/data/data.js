@@ -35,17 +35,18 @@ export const data = {
       itemName: 'Absolute 60ft',
       category: 'yachts',
       url: 'absolute_60ft',
-      description: '',
-      location: '',
+      description:
+        'Absolute 60ft available 4 hours $2500 Location: Miami Beach. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
+      location: 'Miami Beach',
       mainImage: imagesAbsolute60ft.img1,
-      price: '',
+      price: '2500',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '2500',
+          time: '4',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
       gallery: [
         imagesAbsolute60ft.img1,
         imagesAbsolute60ft.img2,
@@ -106,21 +107,22 @@ export const data = {
       ],
     },
     {
-      itemName: 'Azimut 52ft',
+      itemName: 'Azimut 50ft',
       category: 'yachts',
-      url: 'azimut_52ft',
-      description: '',
+      url: 'azimut_50ft',
+      description:
+        'Azimut 50ft available 4 hours $1700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
       location: '',
       mainImage: imagesAzimut52ft.img1,
-      price: '',
+      price: '1700',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '1700',
+          time: '4',
           days: '',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
       gallery: [
         imagesAzimut52ft.img1,
         imagesAzimut52ft.img2,
@@ -160,6 +162,33 @@ export const data = {
         imagesAzimut55ft.img6,
         imagesAzimut55ft.img7,
         imagesAzimut55ft.img8,
+      ],
+    },
+    {
+      itemName: 'Azimut 57ft',
+      category: 'yachts',
+      url: 'azimut_57ft',
+      description:
+        'Azumit 57ft 4 hours $1800. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesThales.img1,
+      price: '1800',
+      prices: [
+        {
+          price: '1800',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
+      gallery: [
+        imagesThales.img1,
+        imagesThales.img2,
+        imagesThales.img3,
+        imagesThales.img4,
+        imagesThales.img5,
+        imagesThales.img6,
+        imagesThales.img7,
       ],
     },
     {
@@ -258,18 +287,19 @@ export const data = {
       itemName: 'Icon 65ft',
       category: 'yachts',
       url: 'icon_65ft',
-      description: '',
+      description:
+        'Icon 65ft 4 hours $2000. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
       location: '',
       mainImage: imagesIcon65ft.img1,
-      price: '',
+      price: '2000',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '2000',
+          time: '4',
           days: '',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
       gallery: [imagesIcon65ft.img1, imagesIcon65ft.img2, imagesIcon65ft.img3],
     },
     {
@@ -328,17 +358,18 @@ export const data = {
       itemName: 'Marques 70ft',
       category: 'yachts',
       url: 'marques_70ft',
-      description: '',
+      description:
+        'Marques 70ft 4 hours $3700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
       location: '',
       mainImage: imagesMarques70ft.img1,
-      price: '',
+      price: '3700',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '3700',
+          time: '4',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
       gallery: [
         imagesMarques70ft.img1,
         imagesMarques70ft.img2,
@@ -346,29 +377,6 @@ export const data = {
         imagesMarques70ft.img4,
         imagesMarques70ft.img5,
         imagesMarques70ft.img6,
-      ],
-    },
-    {
-      itemName: 'New Page 75ft',
-      category: 'yachts',
-      url: 'new_page_75ft',
-      description: '',
-      location: '',
-      mainImage: imagesNewPage75ft.img1,
-      price: '',
-      prices: [
-        {
-          price: '',
-          time: '',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
-      gallery: [
-        imagesNewPage75ft.img1,
-        imagesNewPage75ft.img2,
-        imagesNewPage75ft.img3,
-        imagesNewPage75ft.img4,
-        imagesNewPage75ft.img5,
       ],
     },
     {
@@ -399,17 +407,18 @@ export const data = {
       itemName: 'Sea Ray Sundancer 38ft',
       category: 'yachts',
       url: 'sea_ray_sundancer_38ft',
-      description: '',
+      description:
+        'Sea ray Sundancer 38ft 4 hours $850. Includes: captain, gas, cooler, Bluetooth speakers and floating matt',
       location: '',
       mainImage: imagesSeaRaySundancer38ft.img1,
-      price: '',
+      price: '850',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '850',
+          time: '4',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers'],
       gallery: [
         imagesSeaRaySundancer38ft.img1,
         imagesSeaRaySundancer38ft.img2,
@@ -524,21 +533,22 @@ export const data = {
       ],
     },
     {
-      itemName: 'Sundancer 60ft',
+      itemName: 'Sea Ray Sundancer 60ft',
       category: 'yachts',
       url: 'sundancer_60ft',
-      description: '',
+      description:
+        'Searay sundancer 60ft 4 hours $1400. Includes:captain, mate ,cooler, Bluetooth speakers and floating Matt',
       location: '',
       mainImage: imagesSundancerSport60ft.img1,
-      price: '',
+      price: '1400',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '1400',
+          time: '4',
           days: '',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', ''],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
       gallery: [
         imagesSundancerSport60ft.img1,
         imagesSundancerSport60ft.img2,
@@ -582,6 +592,30 @@ export const data = {
         imagesSunseeker65ft.img5,
         imagesSunseeker65ft.img6,
         imagesSunseeker65ft.img7,
+      ],
+    },
+    {
+      itemName: 'Sunseeker New Page 75ft',
+      category: 'yachts',
+      url: 'sunseeker_new_page_75ft',
+      description:
+        'Sunseeker 75ft New page 4 hours $2850 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
+      location: '',
+      mainImage: imagesNewPage75ft.img1,
+      price: '2850',
+      prices: [
+        {
+          price: '2850',
+          time: '4',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
+      gallery: [
+        imagesNewPage75ft.img1,
+        imagesNewPage75ft.img2,
+        imagesNewPage75ft.img3,
+        imagesNewPage75ft.img4,
+        imagesNewPage75ft.img5,
       ],
     },
     {
@@ -638,32 +672,6 @@ export const data = {
       ],
     },
     {
-      itemName: 'Thales',
-      category: 'yachts',
-      url: 'thales',
-      description: '',
-      location: '',
-      mainImage: imagesThales.img1,
-      price: '',
-      prices: [
-        {
-          price: '',
-          time: '',
-          days: '',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
-      gallery: [
-        imagesThales.img1,
-        imagesThales.img2,
-        imagesThales.img3,
-        imagesThales.img4,
-        imagesThales.img5,
-        imagesThales.img6,
-        imagesThales.img7,
-      ],
-    },
-    {
       itemName: 'Viking 55ft',
       category: 'yachts',
       url: 'viking_55ft',
@@ -714,10 +722,11 @@ export const data = {
   ],
   transportation: [
     {
-      itemName: 'Transportation services',
+      itemName: 'Chevrolet Tahoe 2023',
       category: 'transportation',
-      url: 'transportation_services',
-      description: '',
+      url: 'chevrolet_tahoe_2023',
+      description:
+        'Chevrolet Tahoe 2023 Half day 4 hours $250 Rate $75 per hour. Includes: Chofer and gas. No hidden fees',
       location: '',
       mainImage: imagesTransportation.img1,
       price: '75',
@@ -727,8 +736,13 @@ export const data = {
           time: '1',
           days: '',
         },
+        {
+          price: '250',
+          time: '4',
+          days: '',
+        },
       ],
-      aboutIt: ['Driver', 'Gas'],
+      aboutIt: ['Chofer', 'Gas'],
       gallery: [
         imagesTransportation.img1,
         imagesTransportation.img2,
@@ -764,22 +778,31 @@ export const data = {
   ],
   jetskies: [
     {
-      itemName: 'Wave Runner',
+      itemName: 'Jetskies',
       category: 'jetskies',
-      url: 'wave_runner',
-      description: '',
-      capacity: '',
+      url: 'jetskies',
+      description: 'Jetskies available 1 hour $125 Half day. 4 hours $350. Full day 6 hours $450',
       location: '',
       mainImage: imagesWaveRunner.img1,
-      price: '',
+      price: '125',
       prices: [
         {
-          price: '',
-          time: '',
+          price: '125',
+          time: '1',
           days: '',
         },
+        {
+          price: '350',
+          time: '4',
+          days: 'Half day',
+        },
+        {
+          price: '450',
+          time: '6',
+          days: 'Full day',
+        },
       ],
-      aboutIt: ['Gas'],
+      aboutIt: ['Gas', 'Life vest'],
       gallery: [imagesWaveRunner.img1],
     },
     {

@@ -61,7 +61,11 @@ const Detail = () => {
           <div className={style.infoContainer}>
             <h2>{itemSelected?.itemName}</h2>
             <p>{itemSelected?.description}</p>
-            <button className={style.button}>Book now</button>
+            <a
+              href='#'
+              className={style.button}>
+              Book now
+            </a>
           </div>
         </div>
         <div className={style.detailsContainer}>

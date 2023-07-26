@@ -1,10 +1,8 @@
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css'
 import style from './card.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Card = ({ item }) => {
   const [dollar, setDollar] = useState(
