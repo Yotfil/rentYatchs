@@ -91,7 +91,9 @@ const Detail = () => {
                         </div>
                       </td>
                       {price.time ? (
-                        <td>{price.time} hours</td>
+                        <td>
+                          {price.time} {price.time > 1 ? 'hours' : 'hour'}
+                        </td>
                       ) : (
                         <td>
                           <a href='#'>Contact Us</a>{' '}

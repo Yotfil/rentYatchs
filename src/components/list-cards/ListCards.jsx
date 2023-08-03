@@ -15,7 +15,6 @@ const ListCards = () => {
   const getCurrentLocation = () => {
     const currentLocation = location.pathname.replace('/', '')
     setPathname(currentLocation)
-    console.log(currentLocation)
   }
 
   const getCurrentCardsToShow = () => {

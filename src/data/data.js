@@ -28,6 +28,9 @@ import { imagesTransportation } from './transportation'
 import { imagesMercedesBenz } from './m_benz'
 import { imagesWaveRunner } from './wave_runner'
 import { imagesJetCar } from './jetcar'
+import { imagesBlackMonterrey27ft } from './black_monterrey27ft'
+import { imagesPardo38ft } from './pardo_38ft'
+import { imagesSunseekerV280ft } from './sunseeker_v280ft'
 
 export const data = {
   yachts: [
@@ -189,6 +192,35 @@ export const data = {
         imagesThales.img5,
         imagesThales.img6,
         imagesThales.img7,
+      ],
+    },
+    {
+      itemName: 'Black Monterrey 27ft',
+      category: 'yachts',
+      url: 'black_monterrey_57ft',
+      description: '4 hours $625. Includes: captain, gas, Bluetooth speakers and cooler',
+      location: '',
+      mainImage: imagesBlackMonterrey27ft.img1,
+      price: '625',
+      prices: [
+        {
+          price: '625',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Captain', 'Gas', 'Cooler', 'Bluetooth speakers'],
+      gallery: [
+        imagesBlackMonterrey27ft.img1,
+        imagesBlackMonterrey27ft.img2,
+        imagesBlackMonterrey27ft.img3,
+        imagesBlackMonterrey27ft.img4,
+        imagesBlackMonterrey27ft.img5,
+        imagesBlackMonterrey27ft.img6,
+        imagesBlackMonterrey27ft.img7,
+        imagesBlackMonterrey27ft.img8,
+        imagesBlackMonterrey27ft.img9,
+        imagesBlackMonterrey27ft.img10,
       ],
     },
     {
@@ -377,6 +409,36 @@ export const data = {
         imagesMarques70ft.img4,
         imagesMarques70ft.img5,
         imagesMarques70ft.img6,
+      ],
+    },
+    {
+      itemName: 'Pardo 38ft',
+      category: 'yachts',
+      url: 'pardo_38ft',
+      description:
+        '38 FEET PARDO 2022 “SHINING FORCE » 4 hours $2000. All included up to 13 ppl Water ice soda, Towels not included',
+      location: '',
+      mainImage: imagesPardo38ft.img1,
+      price: '2000',
+      prices: [
+        {
+          price: '2000',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers'],
+      gallery: [
+        imagesPardo38ft.img1,
+        imagesPardo38ft.img2,
+        imagesPardo38ft.img3,
+        imagesPardo38ft.img4,
+        imagesPardo38ft.img5,
+        imagesPardo38ft.img6,
+        imagesPardo38ft.img7,
+        imagesPardo38ft.img8,
+        imagesPardo38ft.img9,
+        imagesPardo38ft.img10,
       ],
     },
     {
@@ -619,12 +681,12 @@ export const data = {
       ],
     },
     {
-      itemName: 'Sunseeker 80ft',
+      itemName: 'Sunseeker 80ft white',
       category: 'yachts',
-      url: 'sunseeker_80ft',
+      url: 'sunseeker_80ft_white',
       description:
         'Sunseeker 80ft 4 hours for only $3000! Includes: captain, mate, gas, floating matt and 2 jetskies for 1 hour each! Book now!',
-      location: '',
+      location: 'Miami Beach',
       mainImage: imagesSunseeker80ft.img1,
       price: '3000',
       prices: [
@@ -641,6 +703,34 @@ export const data = {
         imagesSunseeker80ft.img3,
         imagesSunseeker80ft.img4,
         imagesSunseeker80ft.img5,
+      ],
+    },
+    {
+      itemName: 'Sunseeker 80ft',
+      category: 'yachts',
+      url: 'sunseeker_80ft',
+      description:
+        'Sunseeker 80ft 4 hour $2800. Includes: captain, mate , cooler, Bluetooth speakers, floating Matt and 1 jetski 1 hour FREE',
+      location: 'Miami Downtown',
+      mainImage: imagesSunseekerV280ft.img1,
+      price: '2800',
+      prices: [
+        {
+          price: '2800',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'bluetooth speakers', 'cooler', '1 jetskies for 1 hour'],
+      gallery: [
+        imagesSunseekerV280ft.img1,
+        imagesSunseekerV280ft.img2,
+        imagesSunseekerV280ft.img3,
+        imagesSunseekerV280ft.img4,
+        imagesSunseekerV280ft.img5,
+        imagesSunseekerV280ft.img6,
+        imagesSunseekerV280ft.img7,
+        imagesSunseekerV280ft.img8,
       ],
     },
     {
