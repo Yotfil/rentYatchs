@@ -10,6 +10,7 @@ import { imagesEscapaSilverton50ft } from './escapa_silverton_50ft'
 import { imagesIcon65ft } from './icon_65ft'
 import { imagesLeopard119ft } from './leopard_119ft'
 import { imagesMarques70ft } from './marques_70ft'
+import { imagesNimbus31ft } from './nimbus_31ft'
 import { imagesNewPage75ft } from './new_page75gt'
 import { imagesRegal90ft } from './regal_90ft'
 import { imagesSeaRaySundancer38ft } from './sea_ray_sundancer38ft'
@@ -34,6 +35,148 @@ import { imagesSunseekerV280ft } from './sunseeker_v280ft'
 
 export const data = {
   yachts: [
+    {
+      itemName: 'Azimut 50ft',
+      category: 'yachts',
+      url: 'azimut_50ft',
+      description:
+        'Azimut 50ft available 4 hours $1700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
+      location: '',
+      mainImage: imagesAzimut52ft.img1,
+      price: '1700',
+      prices: [
+        {
+          price: '1700',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
+      gallery: [
+        imagesAzimut52ft.img1,
+        imagesAzimut52ft.img2,
+        imagesAzimut52ft.img3,
+        imagesAzimut52ft.img4,
+        imagesAzimut52ft.img5,
+      ],
+    },
+    {
+      itemName: 'Azimut 57ft',
+      category: 'yachts',
+      url: 'azimut_57ft',
+      description:
+        'Azumit 57ft 4 hours $1800. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesThales.img1,
+      price: '1800',
+      prices: [
+        {
+          price: '1800',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
+      gallery: [
+        imagesThales.img1,
+        imagesThales.img2,
+        imagesThales.img3,
+        imagesThales.img4,
+        imagesThales.img5,
+        imagesThales.img6,
+        imagesThales.img7,
+      ],
+    },
+    {
+      itemName: 'Cruiser 50 ft fly bridge',
+      category: 'yachts',
+      url: 'cruiser_sport_45ft',
+      description:
+        'Cruiser 50 ft fly bridge. Summer special: Monday-Friday 3 hours $899-4 hours $1100-weekends 4 hours $1400 Includes:captain, mate, gas and floating Matt. location: Miami Beach',
+      location: 'Miami Beach',
+      mainImage: imagesCruiserSport50ft.img1,
+      price: '899',
+      prices: [
+        {
+          price: '899',
+          time: '4',
+          days: 'Monday - Friday',
+        },
+        {
+          price: '1100',
+          time: '4',
+          days: 'Weekends',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesCruiserSport50ft.img1,
+        imagesCruiserSport50ft.img2,
+        imagesCruiserSport50ft.img3,
+        imagesCruiserSport50ft.img4,
+        imagesCruiserSport50ft.img5,
+      ],
+    },
+    {
+      itemName: 'Sea Ray Sedan Fly 48ft',
+      category: 'yachts',
+      url: 'sea_ray_sedan_fly_48ft',
+      description:
+        'Sea ray sedan bridge 48 ft summer special: Monday-Thursday $999 Weekends $1200 Location: Miami Beach Includes: captain,mate,gas and floating Matt!',
+      location: 'Miami Beach',
+      mainImage: imagesSeaRaySedanFly48ft.img2,
+      price: '999',
+      prices: [
+        {
+          price: '999',
+          time: '',
+          days: 'Monday - Thursday',
+        },
+        {
+          price: '1200',
+          time: '',
+          days: 'Weekends',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
+      gallery: [
+        imagesSeaRaySedanFly48ft.img1,
+        imagesSeaRaySedanFly48ft.img2,
+        imagesSeaRaySedanFly48ft.img3,
+        imagesSeaRaySedanFly48ft.img4,
+        imagesSeaRaySedanFly48ft.img5,
+        imagesSeaRaySedanFly48ft.img6,
+        imagesSeaRaySedanFly48ft.img7,
+      ],
+    },
+    {
+      itemName: 'Sunseeker 80ft Sliptease',
+      category: 'yachts',
+      url: 'sunseeker_80ft_sliptease',
+      description:
+        'Sunseeker 80ft 4 hour $2800. Includes: captain, mate , cooler, Bluetooth speakers, floating Matt and 1 jetski 1 hour FREE',
+      location: 'Miami Downtown',
+      mainImage: imagesSunseekerV280ft.img1,
+      price: '2800',
+      prices: [
+        {
+          price: '2800',
+          time: '4',
+          days: '',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'bluetooth speakers', 'cooler', '1 jetskies for 1 hour'],
+      gallery: [
+        imagesSunseekerV280ft.img1,
+        imagesSunseekerV280ft.img2,
+        imagesSunseekerV280ft.img3,
+        imagesSunseekerV280ft.img4,
+        imagesSunseekerV280ft.img5,
+        imagesSunseekerV280ft.img6,
+        imagesSunseekerV280ft.img7,
+        imagesSunseekerV280ft.img8,
+      ],
+    },
     {
       itemName: 'Absolute 60ft',
       category: 'yachts',
@@ -110,31 +253,6 @@ export const data = {
       ],
     },
     {
-      itemName: 'Azimut 50ft',
-      category: 'yachts',
-      url: 'azimut_50ft',
-      description:
-        'Azimut 50ft available 4 hours $1700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free',
-      location: '',
-      mainImage: imagesAzimut52ft.img1,
-      price: '1700',
-      prices: [
-        {
-          price: '1700',
-          time: '4',
-          days: '',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
-      gallery: [
-        imagesAzimut52ft.img1,
-        imagesAzimut52ft.img2,
-        imagesAzimut52ft.img3,
-        imagesAzimut52ft.img4,
-        imagesAzimut52ft.img5,
-      ],
-    },
-    {
       itemName: 'Azimut 55ft',
       category: 'yachts',
       url: 'azimut_55ft',
@@ -165,33 +283,6 @@ export const data = {
         imagesAzimut55ft.img6,
         imagesAzimut55ft.img7,
         imagesAzimut55ft.img8,
-      ],
-    },
-    {
-      itemName: 'Azimut 57ft',
-      category: 'yachts',
-      url: 'azimut_57ft',
-      description:
-        'Azumit 57ft 4 hours $1800. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Location: Miami Beach',
-      location: 'Miami Beach',
-      mainImage: imagesThales.img1,
-      price: '1800',
-      prices: [
-        {
-          price: '1800',
-          time: '4',
-          days: '',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Cooler', 'Bluetooth speakers', '1 jetski for 1 hour'],
-      gallery: [
-        imagesThales.img1,
-        imagesThales.img2,
-        imagesThales.img3,
-        imagesThales.img4,
-        imagesThales.img5,
-        imagesThales.img6,
-        imagesThales.img7,
       ],
     },
     {
@@ -253,36 +344,6 @@ export const data = {
         imagesCruiser45ft.img5,
         imagesCruiser45ft.img6,
         imagesCruiser45ft.img7,
-      ],
-    },
-    {
-      itemName: 'Cruiser 50 ft fly bridge',
-      category: 'yachts',
-      url: 'cruiser_sport_45ft',
-      description:
-        'Cruiser 50 ft fly bridge. Summer special: Monday-Friday 3 hours $899-4 hours $1100-weekends 4 hours $1400 Includes:captain, mate, gas and floating Matt. location: Miami Beach',
-      location: 'Miami Beach',
-      mainImage: imagesCruiserSport50ft.img1,
-      price: '899',
-      prices: [
-        {
-          price: '899',
-          time: '4',
-          days: 'Monday - Friday',
-        },
-        {
-          price: '1100',
-          time: '4',
-          days: 'Weekends',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
-      gallery: [
-        imagesCruiserSport50ft.img1,
-        imagesCruiserSport50ft.img2,
-        imagesCruiserSport50ft.img3,
-        imagesCruiserSport50ft.img4,
-        imagesCruiserSport50ft.img5,
       ],
     },
     {
@@ -412,6 +473,30 @@ export const data = {
       ],
     },
     {
+      itemName: 'Nimbus "Sassy Girl" 31ft',
+      category: 'yachts',
+      url: 'nimbus_sassy_girl_31ft',
+      description: '4 hours $1000 Includes: captain, gas , marina fee and floating Matt. Location: downtown Miami ',
+      location: 'Downtown Miami',
+      mainImage: imagesNimbus31ft.img1,
+      price: '1000',
+      prices: [
+        {
+          price: '1000',
+          time: '4',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'Marina Fee'],
+      gallery: [
+        imagesNimbus31ft.img1,
+        imagesNimbus31ft.img2,
+        imagesNimbus31ft.img3,
+        imagesNimbus31ft.img4,
+        imagesNimbus31ft.img5,
+        imagesNimbus31ft.img6,
+      ],
+    },
+    {
       itemName: 'Pardo 38ft',
       category: 'yachts',
       url: 'pardo_38ft',
@@ -537,38 +622,6 @@ export const data = {
       ],
     },
     {
-      itemName: 'Sea Ray Sedan Fly 48ft',
-      category: 'yachts',
-      url: 'sea_ray_sedan_fly_48ft',
-      description:
-        'Sea ray sedan bridge 48 ft summer special: Monday-Thursday $999 Weekends $1200 Location: Miami Beach Includes: captain,mate,gas and floating Matt!',
-      location: 'Miami Beach',
-      mainImage: imagesSeaRaySedanFly48ft.img2,
-      price: '999',
-      prices: [
-        {
-          price: '999',
-          time: '',
-          days: 'Monday - Thursday',
-        },
-        {
-          price: '1200',
-          time: '',
-          days: 'Weekends',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
-      gallery: [
-        imagesSeaRaySedanFly48ft.img1,
-        imagesSeaRaySedanFly48ft.img2,
-        imagesSeaRaySedanFly48ft.img3,
-        imagesSeaRaySedanFly48ft.img4,
-        imagesSeaRaySedanFly48ft.img5,
-        imagesSeaRaySedanFly48ft.img6,
-        imagesSeaRaySedanFly48ft.img7,
-      ],
-    },
-    {
       itemName: 'Sea Ray Sundancer 50ft',
       category: 'yachts',
       url: 'sea_ray_sundancer_50ft',
@@ -681,9 +734,9 @@ export const data = {
       ],
     },
     {
-      itemName: 'Sunseeker 80ft white',
+      itemName: 'Sunseeker 80ft Guili',
       category: 'yachts',
-      url: 'sunseeker_80ft_white',
+      url: 'sunseeker_80ft_guili',
       description:
         'Sunseeker 80ft 4 hours for only $3000! Includes: captain, mate, gas, floating matt and 2 jetskies for 1 hour each! Book now!',
       location: 'Miami Beach',
@@ -703,34 +756,6 @@ export const data = {
         imagesSunseeker80ft.img3,
         imagesSunseeker80ft.img4,
         imagesSunseeker80ft.img5,
-      ],
-    },
-    {
-      itemName: 'Sunseeker 80ft',
-      category: 'yachts',
-      url: 'sunseeker_80ft',
-      description:
-        'Sunseeker 80ft 4 hour $2800. Includes: captain, mate , cooler, Bluetooth speakers, floating Matt and 1 jetski 1 hour FREE',
-      location: 'Miami Downtown',
-      mainImage: imagesSunseekerV280ft.img1,
-      price: '2800',
-      prices: [
-        {
-          price: '2800',
-          time: '4',
-          days: '',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'bluetooth speakers', 'cooler', '1 jetskies for 1 hour'],
-      gallery: [
-        imagesSunseekerV280ft.img1,
-        imagesSunseekerV280ft.img2,
-        imagesSunseekerV280ft.img3,
-        imagesSunseekerV280ft.img4,
-        imagesSunseekerV280ft.img5,
-        imagesSunseekerV280ft.img6,
-        imagesSunseekerV280ft.img7,
-        imagesSunseekerV280ft.img8,
       ],
     },
     {

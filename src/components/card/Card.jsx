@@ -33,10 +33,19 @@ const Card = ({ item }) => {
         </div>
         <div className={style.infoContainer}>
           <h3>{item.itemName}</h3>
-          <div className={style.priceContainer}>
-            {/* <FontAwesomeIcon icon={faDollarSign} /> */}
-            <p className={style.price}>{dollar.format(item.price)}</p>
-            <small className={style.badge}>USD</small>
+          <div>
+            <div className={style.priceContainer}>
+              {/* <FontAwesomeIcon icon={faDollarSign} /> */}
+              <p className={style.price}>{dollar.format(item.prices[0].price)}</p>
+              <small className={style.badge}>USD</small>
+            </div>
+            {item.prices[0].time && (
+              <div className={style.priceContainer}>
+                {/* <FontAwesomeIcon icon={faDollarSign} /> */}
+                <p className={style.price}>{item.prices[0].time}</p>
+                <small className={style.badge}> hours</small>
+              </div>
+            )}
           </div>
         </div>
         <Link

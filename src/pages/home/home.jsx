@@ -50,7 +50,10 @@ const Home = () => {
               icon={faStar}
             />
             <h4>Awesome Customer Service</h4>
-            <p>Chill and private strolls drinks and yummy eats on board the coolest fleet selection</p>
+            <p>
+              We guaranteed our clients the best customer service & professional staff that are going to help you have
+              an unforgettable time with family or love ones.
+            </p>
           </div>
         </div>
 
