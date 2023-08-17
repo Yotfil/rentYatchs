@@ -2,29 +2,41 @@ import Layout from '../../components/layout/Layout'
 import ListCards from '../../components/list-cards/ListCards'
 import style from './home.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown, faStar } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <>
       <div className={style.banner}>
-        <div>
+        <div className={style.containerText}>
           <p>Live the best experience</p>
-          <Link
-            className={style.button}
-            to={'/yachts'}>
-            Take a look at our yachts.
-          </Link>
-          <a
-            href='#'
-            className={`${style.button} ${style.buttonRed}`}>
-            Rent a yatch
-          </a>
+          <div className={style.containerButtons}>
+            <div className={style.containerButtonsText}>
+              <Link
+                className={style.button}
+                to={'/yachts'}>
+                Take a look at our yachts.
+              </Link>
+              <a
+                href='#'
+                className={`${style.button} ${style.buttonRed}`}>
+                Choose your yacht
+              </a>
+            </div>
+            <a href='#yachts'>
+              <FontAwesomeIcon
+                className={style.iconArrow}
+                icon={faAnglesDown}
+              />
+            </a>
+          </div>
         </div>
       </div>
       <Layout>
-        <div className={style.advantages}>
+        <div
+          className={style.advantages}
+          id='yachts'>
           <div className={style.advantage}>
             <FontAwesomeIcon
               className={style.iconAdvantage}

@@ -5,7 +5,7 @@ import style from './transportation.module.scss'
 const Transportation = () => {
   return (
     <div className={style.container}>
-      <Layout title={'Our Transport'}>
+      <Layout title={'Choose Your Transport'}>
         <ListCards></ListCards>
       </Layout>
     </div>

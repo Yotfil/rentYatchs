@@ -12,20 +12,42 @@
     background-size: cover;
     height: 600px;
   }
-  div {
+  .containerText {
     padding: 10px;
-    bottom: 0px;
+    bottom: 20px;
     left: 0px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 14px;
     box-shadow: 0 0 10px black;
     width: fit-content;
     position: absolute;
+    width: 100%;
     @media screen and (min-width: 800px) {
+      width: auto;
       padding: 50px;
       bottom: 100px;
       left: calc(350px - 0px);
     }
+  }
+  .containerButtonsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 800px) {
+      flex-direction: row;
+    }
+  }
+  .containerButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconArrow {
+    margin-top: 15px;
+    color: white;
+    font-size: 24px;
   }
   p {
     font-weight: bold;
