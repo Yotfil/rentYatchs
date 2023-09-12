@@ -79,7 +79,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 5px;
 }
 .itemContainerColumn {
@@ -92,7 +91,7 @@
 }
 .itemContainer p {
   font-weight: 400;
-  text-align: center;
+  text-align: start;
 }
 .icon {
   color: $orange-color;

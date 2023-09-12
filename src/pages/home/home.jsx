@@ -13,16 +13,16 @@ const Home = () => {
           <p>Live the best experience</p>
           <div className={style.containerButtons}>
             <div className={style.containerButtonsText}>
-              <Link
+              {/* <Link
                 className={style.button}
                 to={'/yachts'}>
                 Take a look at our yachts.
-              </Link>
-              <a
-                href='#'
+              </Link> */}
+              <Link
+                to={'/yachts'}
                 className={`${style.button} ${style.buttonRed}`}>
                 Choose your yacht
-              </a>
+              </Link>
             </div>
             <a href='#yachts'>
               <FontAwesomeIcon
