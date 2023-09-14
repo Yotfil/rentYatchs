@@ -53,7 +53,7 @@ export const data = {
       category: 'yachts',
       url: 'azimut_50ft',
       description:
-        'Azimut 50ft available 4 hours $1700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
+        'Azimut 50ft available. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
       location: '',
       mainImage: imagesAzimut50ft.img1,
       price: '1700',
@@ -78,7 +78,7 @@ export const data = {
       category: 'yachts',
       url: 'azimut_57ft',
       description:
-        'Azimut 57ft 4 hours $1800. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Location: Miami Beach. -Capacity: 13 people max',
+        'Azimut 57ft. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Location: Miami Beach. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesThales.img1,
       price: '1800',
@@ -167,7 +167,7 @@ export const data = {
       category: 'yachts',
       url: 'sunseeker_80ft_sliptease',
       description:
-        'Sunseeker 80ft 4 hour $2800. Includes: captain, mate , cooler, Bluetooth speakers, floating Matt and 1 jetski 1 hour FREE. -Capacity: 13 people max',
+        'Sunseeker 80ft. Includes: captain, mate , cooler, Bluetooth speakers, floating Matt and 1 jetski 1 hour FREE. -Capacity: 13 people max',
       location: 'Miami Downtown',
       mainImage: imagesSunseekerV280ft.img1,
       price: '2800',
@@ -195,7 +195,7 @@ export const data = {
       category: 'yachts',
       url: 'absolute_60ft',
       description:
-        'Absolute 60ft available 4 hours $2500 Location: Miami Beach. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
+        'Absolute 60ft available. Location: Miami Beach. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesAbsolute60ft.img1,
       price: '2500',
@@ -218,8 +218,7 @@ export const data = {
       itemName: 'Adonis 80ft with jacuzzi',
       category: 'yachts',
       url: 'adonis_80ft',
-      description:
-        'Adonis 80 ft available 4 hours $5000 Includes : captain, mate, gas, floating Matt. -Capacity: 13 people max',
+      description: 'Adonis 80 ft available. Includes : captain, mate, gas, floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesAdonis80ft.img1,
       price: '5000',
@@ -247,8 +246,7 @@ export const data = {
       itemName: 'Axopar Brabus 40ft',
       category: 'yachts',
       url: 'axopar_brabus_40ft',
-      description:
-        'Only $1500. Includes: captain, mate, gas and floating Matt. Location: Miami Beach. -Capacity: 13 people max',
+      description: 'Includes: captain, mate, gas and floating Matt. Location: Miami Beach. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesAxoparBrabus40ft.img1,
       price: '1500',
@@ -323,7 +321,8 @@ export const data = {
       itemName: 'Black Monterrey 27ft',
       category: 'yachts',
       url: 'black_monterrey_57ft',
-      description: '4 hours $625. Includes: captain, gas, Bluetooth speakers and cooler. -Capacity: 13 people max',
+      description:
+        'Black Monterrey 27ft. Includes: captain, gas, Bluetooth speakers and cooler. -Capacity: 13 people max',
       location: '',
       mainImage: imagesBlackMonterrey27ft.img1,
       price: '625',
@@ -353,7 +352,7 @@ export const data = {
       category: 'yachts',
       url: 'cranchi_50ft',
       description:
-        'Cranchi 50ft 4 hours $1200. Includes: captain, gas, cooler, sound system & floating Matt. -Capacity: 13 people max',
+        'Cranchi 50ft. Includes: captain, gas, cooler, sound system & floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesCranchi50ft.img1,
       price: '1200',
@@ -404,7 +403,7 @@ export const data = {
       category: 'yachts',
       url: 'escapa_silverton_50ft',
       description:
-        'Escápa Silverton 50ft available 4 hours $1200 Includes: captain,mate,gas,cooler, and floating Matt. -Capacity: 13 people max',
+        'Escápa Silverton 50ft available. Includes: captain,mate,gas,cooler, and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesEscapaSilverton50ft.img1,
       price: '1200',
@@ -462,8 +461,7 @@ export const data = {
       itemName: 'Ico 80ft',
       category: 'yachts',
       url: 'ico_80ft',
-      description:
-        'Ico 80ft 4 hours $5500 Includes: captain, mate ,gas ,marina fee ,floating Matt. -Capacity: 13 people max',
+      description: 'Ico 80ft. Includes: captain, mate ,gas ,marina fee ,floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesIco80ft.img1,
       price: '5500',
@@ -493,7 +491,7 @@ export const data = {
       category: 'yachts',
       url: 'icon_65ft',
       description:
-        'Icon 65ft 4 hours $2000. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Capacity 13 people. -Capacity: 13 people max',
+        'Icon 65ft. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. Capacity 13 people. -Capacity: 13 people max',
       location: '',
       mainImage: imagesIcon65ft.img1,
       price: '2000',
@@ -512,7 +510,7 @@ export const data = {
       category: 'yachts',
       url: 'galeon_45ft',
       description:
-        'Galeon 2022 45ft 4 hours $1700. Includes: captain, mate, gas,cooler,Bluetooth speakers and floating Matt. -Capacity: 13 people max',
+        'Galeon 2022 45ft. Includes: captain, mate, gas,cooler,Bluetooth speakers and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesGaleon45ft.img1,
       price: '1700',
@@ -590,7 +588,7 @@ export const data = {
       category: 'yachts',
       url: 'marques_70ft',
       description:
-        'Marques 70ft 4 hours $3700 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
+        'Marques 70ft. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
       location: '',
       mainImage: imagesMarques70ft.img1,
       price: '3700',
@@ -615,7 +613,7 @@ export const data = {
       category: 'yachts',
       url: 'nimbus_sassy_girl_31ft',
       description:
-        '4 hours $1000 Includes: captain, gas , marina fee and floating Matt. Location: downtown Miami. -Capacity: 13 people max',
+        'Nimbus "Sassy Girl" 31ft. Includes: captain, gas , marina fee and floating Matt. Location: downtown Miami. -Capacity: 13 people max',
       location: 'Downtown Miami',
       mainImage: imagesNimbus31ft.img1,
       price: '1000',
@@ -640,7 +638,7 @@ export const data = {
       category: 'yachts',
       url: 'pardo_38ft',
       description:
-        '38 FEET PARDO 2022 “SHINING FORCE » 4 hours $2000. All included up to 13 ppl Water ice soda, Towels not included. -Capacity: 13 people max',
+        '38 FEET PARDO 2022 “SHINING FORCE ». All included up to 13 ppl Water ice soda, Towels not included. -Capacity: 13 people max',
       location: '',
       mainImage: imagesPardo38ft.img1,
       price: '2000',
@@ -670,7 +668,7 @@ export const data = {
       category: 'yachts',
       url: 'princes_58ft',
       description:
-        'Princes 58ft 4 hours $2400 all in. Includes: captain, mate, gas, ice, water, sound system and floating Matt. -Capacity: 13 people max',
+        'Princes 58ft. Includes: captain, mate, gas, ice, water, sound system and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesPrinces58ft.img1,
       price: '2400',
@@ -778,7 +776,7 @@ export const data = {
       category: 'yachts',
       url: 'sea_ray_50ft',
       description:
-        '4 hours &1500 all in. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach. -Capacity: 13 people max',
+        'Searay 50ft. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesSeaRay50ft.img1,
       price: '1500',
@@ -831,7 +829,7 @@ export const data = {
       category: 'yachts',
       url: 'sea_ray_52ft',
       description:
-        '4 hours &1500 all in. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach. -Capacity: 13 people max',
+        'Searay 52ft. Includes: captain, mate, gas floating Matt & 1 jetski 1/h location: Miami Beach. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesSeaRay52ft.img2,
       price: '1500',
@@ -855,7 +853,7 @@ export const data = {
       category: 'yachts',
       url: 'sea_ray_sundancer_50ft',
       description:
-        'Searay Sundancer 50ft available 4 hours $1450 Includes: captain , mate , cooler ,floating Matt and 1 jetski for 1 hour free. -Capacity: 13 people max',
+        'Searay Sundancer 50ft available. Includes: captain , mate , cooler ,floating Matt and 1 jetski for 1 hour free. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesSeaRaySundancer50ft.img2,
       price: '1450',
@@ -881,7 +879,7 @@ export const data = {
       category: 'yachts',
       url: 'sundancer_60ft',
       description:
-        'Searay sundancer 60ft 4 hours $1400. Includes:captain, mate ,cooler, Bluetooth speakers and floating Matt. -Capacity: 13 people max',
+        'Searay sundancer 60ft. Includes:captain, mate ,cooler, Bluetooth speakers and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesSundancerSport60ft.img1,
       price: '1400',
@@ -936,7 +934,7 @@ export const data = {
       category: 'yachts',
       url: 'sealine_40ft',
       description:
-        'Sealine 40ft 4 hours $1200. Includes:captain ,mate, ice, water, marina fee, gas & floating Matt. -Capacity: 13 people max',
+        'Sealine 40ft. Includes:captain ,mate, ice, water, marina fee, gas & floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesSealine40ft.img1,
       price: '1200',
@@ -993,7 +991,7 @@ export const data = {
       category: 'yachts',
       url: 'sunseeker_new_page_75ft',
       description:
-        'Sunseeker 75ft New page 4 hours $2850 Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
+        'Sunseeker 75ft New page. Includes:captain, mate ,cooler, Bluetooth speakers,floating Matt and 1 jetski 1 hour free. -Capacity: 13 people max',
       location: '',
       mainImage: imagesNewPage75ft.img1,
       price: '2850',
@@ -1017,7 +1015,7 @@ export const data = {
       category: 'yachts',
       url: 'sunseeker_80ft_guili',
       description:
-        'Sunseeker 80ft 4 hours for only $3000! Includes: captain, mate, gas, floating matt and 2 jetskies for 1 hour each! Book now!. -Capacity: 13 people max',
+        'Sunseeker 80ft. Includes: captain, mate, gas, floating matt and 2 jetskies for 1 hour each! Book now!. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesSunseeker80ft.img1,
       price: '3000',
@@ -1070,13 +1068,13 @@ export const data = {
       category: 'yachts',
       url: 'the_panther_65ft',
       description:
-        'The Panther 65ft $1900 Includes: captain, mate, gas, floating Matt. Capacity 13 people. -Capacity: 13 people max',
+        'The Panther 65ft. Includes: captain, mate, gas, floating Matt. Capacity 13 people. -Capacity: 13 people max',
       location: '',
       mainImage: imagesThePanther65ft.img1,
-      price: '2300',
+      price: '1900',
       prices: [
         {
-          price: '2300',
+          price: '1900',
           time: '4',
           days: '',
         },
@@ -1100,7 +1098,7 @@ export const data = {
       category: 'yachts',
       url: 'viking_55ft',
       description:
-        'Viking 55ft available: 4 hours $1500 Includes: captain, mate, gas, cooler and floating Matt. -Capacity: 13 people max',
+        'Viking 55ft available. Includes: captain, mate, gas, cooler and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesViking.img1,
       price: '1500',
@@ -1170,7 +1168,7 @@ export const data = {
       category: 'yachts',
       url: 'yamaha_25ft',
       description:
-        'Yamaha ar25 ft available 4 hours $499 Includes: captain, gas, cooler, Bluetooth speakers and floating Matt. -Capacity: 13 people max',
+        'Yamaha ar25 ft available. Includes: captain, gas, cooler, Bluetooth speakers and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesYamaha.img1,
       price: '499',
@@ -1189,7 +1187,7 @@ export const data = {
       category: 'yachts',
       url: 'zest_for_life_70ft',
       description:
-        'Zest for life 70ft 4 hours $2300. Includes: captain, mate, cooler, gas, bluetooth speakers and floating Matt. -Capacity: 13 people max',
+        'Zest for life 70ft. Includes: captain, mate, cooler, gas, bluetooth speakers and floating Matt. -Capacity: 13 people max',
       location: '',
       mainImage: imagesZestForLife70ft.img1,
       price: '2300',
