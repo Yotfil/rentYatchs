@@ -215,7 +215,7 @@ export const data = {
       ],
     },
     {
-      itemName: 'Adonis 80ft',
+      itemName: 'Adonis 80ft with jacuzzi',
       category: 'yachts',
       url: 'adonis_80ft',
       description:
@@ -907,7 +907,7 @@ export const data = {
       ],
     },
     {
-      itemName: 'Searay Sundancer with jacuzzi 65ft',
+      itemName: 'Searay 65ft with jacuzzi',
       category: 'yachts',
       url: 'searay_sundancer_jacuzzi_60ft',
       description:
