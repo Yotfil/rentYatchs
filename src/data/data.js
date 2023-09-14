@@ -108,15 +108,15 @@ export const data = {
         'Cruiser 50 ft fly bridge. Summer special: Monday-Friday 3 hours $899-4 hours $1100-weekends 4 hours $1400 Includes:captain, mate, gas and floating Matt. location: Miami Beach. -Capacity: 13 people max',
       location: 'Miami Beach',
       mainImage: imagesCruiserSport50ft.img1,
-      price: '899',
+      price: '1200',
       prices: [
         {
-          price: '899',
+          price: '1200',
           time: '4',
           days: 'Monday - Friday',
         },
         {
-          price: '1100',
+          price: '1400',
           time: '4',
           days: 'Weekends',
         },
