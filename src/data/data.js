@@ -694,9 +694,9 @@ export const data = {
       ],
     },
     {
-      itemName: 'Regal 42ft',
+      itemName: 'Regal 32ft',
       category: 'yachts',
-      url: 'regal_42ft',
+      url: 'regal_32ft',
       description:
         'Regal 32ft 3 hours $599 4 hours $699. Includes: captain, gas, cooler, marina fee & floating Matt. -Capacity: 13 people max',
       location: 'Miami Beach',
