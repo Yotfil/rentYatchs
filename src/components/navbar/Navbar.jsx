@@ -3,6 +3,7 @@ import style from './navbar.module.scss'
 import { useState } from 'react'
 import { useWindowSize } from '../../hooks/useWindowSize'
 import logo from '../../assets/logo_white.svg'
+import { CONSTANTES } from '../../utils/constants'
 
 const Navbar = () => {
   const [active, setActive] = useState(false)
