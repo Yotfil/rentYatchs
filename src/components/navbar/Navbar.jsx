@@ -79,7 +79,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <button className={style.contact}>Contact</button>
+        <a
+          href='https://wa.link/0pws9d'
+          target='_blank'
+          className={style.contact}>
+          Contact
+        </a>
       </nav>
     </header>
   )

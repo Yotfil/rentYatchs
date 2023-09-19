@@ -62,7 +62,8 @@ const Detail = () => {
             <h2>{itemSelected?.itemName}</h2>
             <p>{itemSelected?.description}</p>
             <a
-              href='#'
+              href='https://wa.link/0pws9d'
+              target='_blank'
               className={style.button}>
               Book now
             </a>
