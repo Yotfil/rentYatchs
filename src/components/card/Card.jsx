@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const Card = ({ item }) => {
-  console.log(item, 'this is item')
   const [dollar, setDollar] = useState(
     new Intl.NumberFormat('en-US', {
       style: 'currency',
