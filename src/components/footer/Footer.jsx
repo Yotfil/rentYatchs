@@ -18,7 +18,7 @@ const Footer = () => {
         <small>
           © Luxury 305 Rentals, All Rights Reserved. More information
           <a
-            href='https://wa.link/0pws9d'
+            href={CONSTANTES.linkWhatsapp}
             target='_blank'
             className={styles.link}>
             Contact Us

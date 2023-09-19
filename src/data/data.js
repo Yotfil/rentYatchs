@@ -49,6 +49,38 @@ import { imagesSearayJacuzzi65ft } from './seareay_jacuzzi_65ft'
 export const data = {
   yachts: [
     {
+      itemName: 'Cruiser 45ft',
+      category: 'yachts',
+      url: 'cruiser_45ft',
+      description:
+        'Monday-Friday 4 hours $899. Weekends 4 hours $999. Includes: captain, mate ,gas, floating Matt and 1 jetski for 1 hour! Location: Miami River 5 star location. -Capacity: 13 people max',
+      location: 'Miami River',
+      mainImage: imagesCruiser45ft.img1,
+      price: '899',
+      prices: [
+        {
+          price: '899',
+          time: '4',
+          days: 'Monday - Friday',
+        },
+        {
+          price: '999',
+          time: '4',
+          days: 'Weekends',
+        },
+      ],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'jetski for 1 hour'],
+      gallery: [
+        imagesCruiser45ft.img1,
+        imagesCruiser45ft.img2,
+        imagesCruiser45ft.img3,
+        imagesCruiser45ft.img4,
+        imagesCruiser45ft.img5,
+        imagesCruiser45ft.img6,
+        imagesCruiser45ft.img7,
+      ],
+    },
+    {
       itemName: 'Azimut 50ft',
       category: 'yachts',
       url: 'azimut_50ft',
@@ -256,7 +288,7 @@ export const data = {
           time: '',
         },
       ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', '2 jetskies for 1 hour'],
+      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt'],
       gallery: [
         imagesAxoparBrabus40ft.img1,
         imagesAxoparBrabus40ft.img2,
@@ -365,38 +397,6 @@ export const data = {
       ],
       aboutIt: ['Cooler', 'Captain', 'Gas', 'Floating Matt', 'Sound System'],
       gallery: [imagesCranchi50ft.img1, imagesCranchi50ft.img2, imagesCranchi50ft.img3],
-    },
-    {
-      itemName: 'Cruiser 45ft',
-      category: 'yachts',
-      url: 'cruiser_45ft',
-      description:
-        'Monday-Friday 4 hours $899. Weekends 4 hours $999. Includes: captain, mate ,gas, floating Matt and 1 jetski for 1 hour! Location: Miami River 5 star location. -Capacity: 13 people max',
-      location: 'Miami River',
-      mainImage: imagesCruiser45ft.img1,
-      price: '899',
-      prices: [
-        {
-          price: '899',
-          time: '4',
-          days: 'Monday - Friday',
-        },
-        {
-          price: '999',
-          time: '4',
-          days: 'Weekends',
-        },
-      ],
-      aboutIt: ['Mate', 'Captain', 'Gas', 'Floating Matt', 'jetski for 1 hour'],
-      gallery: [
-        imagesCruiser45ft.img1,
-        imagesCruiser45ft.img2,
-        imagesCruiser45ft.img3,
-        imagesCruiser45ft.img4,
-        imagesCruiser45ft.img5,
-        imagesCruiser45ft.img6,
-        imagesCruiser45ft.img7,
-      ],
     },
     {
       itemName: 'Escápa Silverton 50ft',

@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import { data } from '../../data/data'
 
 import { useLocation, useNavigate } from 'react-router-dom'
+import { CONSTANTES } from '../../utils/constants'
 
 const Detail = () => {
   const [dollar, setDollar] = useState(
@@ -62,7 +63,7 @@ const Detail = () => {
             <h2>{itemSelected?.itemName}</h2>
             <p>{itemSelected?.description}</p>
             <a
-              href='https://wa.link/0pws9d'
+              href={CONSTANTES.linkWhatsapp}
               target='_blank'
               className={style.button}>
               Book now

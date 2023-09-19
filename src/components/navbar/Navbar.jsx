@@ -80,7 +80,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href='https://wa.link/0pws9d'
+          href={CONSTANTES.linkWhatsapp}
           target='_blank'
           className={style.contact}>
           Contact
